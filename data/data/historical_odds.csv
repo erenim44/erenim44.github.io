@@ -1,4 +1,4 @@
-home,draw,away,result,date,league,homeTeam,awayTeam,homeGoals,awayGoals
+homeOdd,drawOdd,awayOdd,result,date,league,homeTeam,awayTeam,homeGoals,awayGoals
 1.4,5.16,2.06,2,2016-05-20,ENG PL,Manchester City,Liverpool,1,2
 1.28,3.97,2.85,2,2020-06-02,FRA Ligue 1,Real Madrid,PSG,1,5
 3.48,4.72,3.85,1,2013-07-04,SPA LaLiga,Bayern,Chelsea,1,0
