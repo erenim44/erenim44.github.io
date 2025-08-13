@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Futbol Analiz – Demo (.github.io)</title>
-  <!-- Tailwind for quick styling -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="data:," />
   <link rel="stylesheet" href="./style.css" />
@@ -16,7 +15,7 @@
         <div class="h-9 w-9 rounded-xl bg-indigo-600 text-white grid place-items-center font-bold">FA</div>
         <div>
           <h1 class="text-lg font-bold">Futbol Analiz</h1>
-          <p class="text-xs text-slate-500">.github.io için demo – oran karşılaştırma</p>
+          <p class="text-xs text-slate-500">.github.io için demo – CSV'den tarihsel oran yükleme</p>
         </div>
       </div>
       <nav class="hidden sm:flex gap-2">
@@ -27,22 +26,19 @@
   </header>
 
   <main class="max-w-6xl mx-auto px-4 py-8 grid gap-6">
-    <!-- ORAN KARŞILAŞTIRMA -->
     <section id="oran" class="card">
       <h2 class="text-xl font-bold">Oran Karşılaştırma</h2>
-      <p class="text-sm text-slate-500">Ev – Beraberlik – Deplasman oranlarını gir; geçmiş maçlara en çok benzeyen 5 maçı, skorla birlikte ve <b>2.5 Alt/Üst</b> ile <b>KG Var/Yok</b> bilgisini gösterelim.</p>
+      <p class="text-sm text-slate-500">Ev – Beraberlik – Deplasman oranlarını gir; <b>data/historical_odds.csv</b> içindeki 10+ yıllık veriye göre en benzer 5 maçı gösterelim.</p>
+      <div class="text-xs text-slate-500">Not: CSV yoksa otomatik demo veriye düşer.</div>
 
       <form id="oddsForm" class="mt-4 grid sm:grid-cols-4 gap-3">
-        <label class="block">
-          <span class="text-xs text-slate-600">Ev Oranı</span>
+        <label class="block"><span class="text-xs text-slate-600">Ev Oranı</span>
           <input type="number" step="0.01" min="1.01" required id="homeOdd" placeholder="ör. 1.80" class="w-full rounded-lg border-slate-300" />
         </label>
-        <label class="block">
-          <span class="text-xs text-slate-600">Beraberlik</span>
+        <label class="block"><span class="text-xs text-slate-600">Beraberlik</span>
           <input type="number" step="0.01" min="1.01" required id="drawOdd" placeholder="ör. 3.30" class="w-full rounded-lg border-slate-300" />
         </label>
-        <label class="block">
-          <span class="text-xs text-slate-600">Deplasman</span>
+        <label class="block"><span class="text-xs text-slate-600">Deplasman</span>
           <input type="number" step="0.01" min="1.01" required id="awayOdd" placeholder="ör. 4.20" class="w-full rounded-lg border-slate-300" />
         </label>
         <div class="flex items-end">
