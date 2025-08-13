@@ -11,7 +11,7 @@ const DEMO = [
 
 async function loadCSV() {
   try {
-    const res = await fetch('./data/historical_odds.csv', {cache:'no-store'});
+const res = await fetch('./data/data/historical_odds.csv', {cache:'no-store'});
     if (!res.ok) throw new Error('no csv');
     const text = await res.text();
     const rows = text.trim().split(/\r?\n/);
